@@ -18,4 +18,5 @@ while IFS= read -r LINE; do
 done < "$LOGFILE"
 
 echo "Keyword '$KEYWORD' found $COUNT times"
+
 grep -i "$KEYWORD" "$LOGFILE" | tail -5
